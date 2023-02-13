@@ -1,0 +1,30 @@
+.form {
+    button {
+        border: none;
+        outline: none;
+        background-color: bisque;
+        padding: 5px 49px;
+        margin-top: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 17px;
+        transition: all 0.3s;
+        &:hover{
+            background-color: rgb(217, 184, 143);
+        }
+    }
+
+    .input {
+        label {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        input {
+            padding: 4px 10px;
+            border-radius: 3px;
+            outline: none;
+            border-color: black;
+        }
+    }
+}

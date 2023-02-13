@@ -1,0 +1,22 @@
+.summary{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #b0aeae;
+    border-radius: 10px;
+    padding: 18px;
+    line-height: 2.1;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2{
+
+    }
+    p{
+        font-size: 17px;
+        color: brown;
+    }
+}

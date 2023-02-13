@@ -1,0 +1,23 @@
+.cars {
+    width: 55vw;
+    margin: auto;
+    max-width: 700px;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid gray;
+            padding: 12px;
+            .price{
+                color: red;
+            }
+        }
+    }
+}

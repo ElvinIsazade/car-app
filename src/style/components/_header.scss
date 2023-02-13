@@ -1,0 +1,98 @@
+.header-container {
+    background-color: #edce95;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+
+    .logo {
+        a {
+            color: brown;
+            text-decoration: none;
+            font-size: 22px;
+        }
+    }
+
+    .cart-btn {
+        border: none;
+        outline: none;
+        padding: 10px;
+        display: flex;
+        align-items: 6px;
+        align-items: center;
+        justify-content: space-around;
+        background-color: white;
+        border-radius: 7px;
+        color: brown;
+        font-size: 18px;
+        width: 160px;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: orange;
+            color: #fff;
+        }
+
+        &-badge__container {
+            position: relative;
+
+            &__icon {}
+
+            .badge {
+                position: absolute;
+                top: -8px;
+                right: -13px;
+            }
+        }
+
+        &__text {
+            white-space: nowrap;
+        }
+    }
+}
+.main-image{
+    width: 100%;
+    height: 40rem;
+    overflow: hidden;
+    z-index: 0;
+    img{
+        width: 102%;
+        height: 100%;
+        object-fit: cover;
+        transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+    }
+}
+
+.bump {
+    animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(0.9);
+    }
+
+    30% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
