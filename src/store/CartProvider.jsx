@@ -48,12 +48,18 @@ const CartProvider = (props) => {
         }
     }
 
+    const clearItemsFromCart = () => {
+        setCartItems([]);
+        localStorage.removeItem("cartItem");
+    }
+
     return (
         <CartContext.Provider value={{
             cartItems:cartItems,
             totalAmount: totalAmount,
             addToCartItem: addToCartItem,
-            removeFromCartItem: removeFromCartItem
+            removeFromCartItem: removeFromCartItem,
+            clearItemsFromCart: clearItemsFromCart
         }}>
             {props.children}
         </CartContext.Provider>

@@ -2,6 +2,7 @@ import {useState } from "react";
 import Cart from "./Cart/Cart";
 import Cars from "./components/Cars/Cars";
 import Header from "./Layout/Header";
+import 'react-loading-skeleton/dist/skeleton.css'
 
 const App = () => {
   const [showCart,setShowCart] = useState(false);

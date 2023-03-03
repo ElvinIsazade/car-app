@@ -5,8 +5,8 @@ import { FiShoppingCart } from "react-icons/fi";
 const Header = (props) => {
     const [randomImage,setRandomImage] = useState("");
     const getRandomPhoto = async () => {
-        const response = await fetch("https://source.unsplash.com/1600x900/?car");
-        setRandomImage(response.url)
+        // const response = await fetch("https://source.unsplash.com/1600x900/?car");
+        // setRandomImage(response.url)
     }
     useEffect(() => {
         getRandomPhoto()
